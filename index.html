@@ -29,7 +29,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-image: url('dd.jpg');
+            background-image: url('1.jpg');
             background-size: cover;
         }
 
@@ -84,8 +84,10 @@
         }
 
         footer {
-            background: rgb(226, 226, 226);
+            background: #e2e2e2;
             margin-bottom: -25px;
+            box-shadow: #e2e2e2 0 0 25px, #e2e2e2 0 0 30px, #e2e2e2 0 0 35px, #e2e2e2 0 0 45px, #e2e2e2 0 0 55px, #e2e2e2 0 0 70px, #e2e2e2 0 0 80px, #e2e2e2 0 0 95px, #e2e2e2 0 0 110px, #e2e2e2 0 0 125px;
+            border: none;
         }
 
         #lineBreaker {
@@ -153,28 +155,37 @@
 
 </head>
 
-<body>
+<body id="body">
     <h1>MicoWebsites</h1>
 
     <div id="linksDiv">
         <h2>🔴 Featured</h2>
-        <a href="https://micoweb.github.io/c/" id="links">MicoMyDay</a>
         <a href="https://micoweb.github.io/a/" id="links">Game</a>
         <a href="https://micoweb.github.io/b/" id="links">DigitalVesakZone</a>
+        <a href="https://micoweb.github.io/c/" id="links">MicoMyDay</a>
         <a href="https://micoweb.github.io/d/" id="links">MicoToday</a>
-        <a href="https://micoweb.github.io/micoebook/" id="links">MicoEbook</a>
+        <a href="https://micoweb.github.io/e/" id="links">MicoEbook</a>
+    </div>
+
+    <div id="linksDiv">
+        <h2>🟢 Others</h2>
+        <a href="https://micoweb.github.io/f/" id="links">MicoBrcG</a>
+        <a href="https://micoweb.github.io/g/" id="links">MicoTypeCalculator</a>
+        <a href="https://micoweb.github.io/h/" id="links">MicoToDo</a>
+        <a href="https://micoweb.github.io/i/" id="links">MicoInsideX</a>
+        <a href="https://micoweb.github.io/Mico/" id="links">MicoUserAccount</a>
     </div>
 
 
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <br><br>
-    <br>
-    <br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
 
 
     <footer>
@@ -191,9 +202,39 @@
 
         <hr id="lineBreaker">
         <center>
-            <h5 id="cc">© 2024 MicoWeb by Sadew Nethsara</h5>
+            <h5 id="cc">© MicoWeb 2024 by <strong> Sadew Nethsara </strong></h5>
         </center>
     </footer>
+
+    <script>
+        console.log('© MicoWeb 2024 by Sadew Nethsara ')
+
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        };
+
+        let x = getRandomInt(4);
+
+        switch(x){
+            case 0:
+                document.getElementById('body').style.backgroundImage = "url('0.jpg')";
+                break;
+            case 1:
+                document.getElementById('body').style.backgroundImage = "url('1.jpg')";
+                break;
+            case 2:
+                document.getElementById('body').style.backgroundImage = "url('2.jpg')";
+                break;
+            case 3:
+                document.getElementById('body').style.backgroundImage = "url('3.jpg')";
+                break;
+        }
+        
+        
+      
+
+
+    </script>
 
 </body>
 
